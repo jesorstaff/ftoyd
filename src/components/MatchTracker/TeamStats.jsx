@@ -1,7 +1,7 @@
 const TeamStats = ({ team }) => {
   return (
     <div className="grid grid-cols-[repeat(3,1fr)] gap-2 items-center bg-cell-bg py-2 px-6 rounded-sm mt-2">
-      <TeamStatsItem title="Points" value={team.points} />
+      <TeamStatsItem title="Points" value={`+${team.points}`} />
       <TeamStatsItem title="Место" value={team.place} />
       <TeamStatsItem title="Всего убийств" value={team.total_kills} />
     </div>

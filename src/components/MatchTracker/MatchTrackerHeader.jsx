@@ -2,7 +2,7 @@ import logo from "./assets/logo.svg";
 import warning from "./assets/warning.svg";
 import ButtonUI from "../ui/ButtonUI";
 
-const MatchTrackerHeader = ({ error = false, isLoading }) => {
+const MatchTrackerHeader = ({ error = false, refreshData }) => {
   return (
     <div className="flex justify-between items-center mb-5">
       <img src={logo} alt="logo" />
@@ -13,7 +13,7 @@ const MatchTrackerHeader = ({ error = false, isLoading }) => {
             <p>Ошибка: не удалось загрузить информацию</p>
           </div>
         )}
-        <ButtonUI label="Обновить" />
+        <ButtonUI label="Обновить" onClick={refreshData} />
       </div>
     </div>
   );

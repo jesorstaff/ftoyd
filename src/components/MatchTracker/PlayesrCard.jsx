@@ -1,3 +1,5 @@
+import avatar from "../../assets/avatar_global.png";
+
 const PlayerCard = ({ player }) => {
   return (
     <div className="flex items-center justify-between rounded-sm bg-cell-bg py-2 px-6">
