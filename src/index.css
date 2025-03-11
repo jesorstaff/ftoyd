@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-main-bg: #06080c;
+  --color-default-bg: #0b0e12;
+
+  --color-default-red: #eb0237;
+  --color-pressed-red: #a01131;
+  --color-disabled-red: #701328;
+
+  --color-status-green: #43ad28;
+  --color-status-finished: #eb0237;
+  --color-status-preparing: #eb6402;
+
+  --color-cell-bg: #101318;
+  --color-cell-secondary: #fafafa66;
+}
+
+:root {
+  --color-default-text: white;
+}
+
+body {
+  color: var(--color-default-text);
+  background-color: var(--color-main-bg);
+  font-weight: 600;
+}
